@@ -12,11 +12,11 @@ before_install:
   - git clone --recursive git://github.com/theos/theos.git ~/theos
   - git tag "'v'"$(grep 'Version: ' control | sed 's/^.*: //')
 script:
-- make package
+  - make package
 deploy:
-  provider: releases
-  api_key: $GITHUB_OAUTH_TOKEN
-  file: $FILENAME
-  skip_cleanup: true
+  - provider: releases
+  - api_key: $GITHUB_OAUTH_TOKEN
+  - file: $FILENAME
+  - skip_cleanup: true
   on:
-    tags: true
+    - tags: true
