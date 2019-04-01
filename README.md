@@ -3,3 +3,7 @@
 Show TweetBot users' profile pictures in ShortLook when you receive a TweetBot notification!
 
 (This is not ShortLook itself, but a plugin for it)
+
+# Changelog
+## v1.0
+Initial Release
